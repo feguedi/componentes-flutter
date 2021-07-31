@@ -22,6 +22,8 @@ class CardPage extends StatelessWidget {
 
   Widget _cardTipo1() {
     return Card(
+      elevation: 8.0,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
       child: Column(
         children: [
           ListTile(
@@ -53,6 +55,8 @@ class CardPage extends StatelessWidget {
 
   Widget _cardTipo2() {
     return Card(
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
       child: Column(
         children: [
           FadeInImage(
